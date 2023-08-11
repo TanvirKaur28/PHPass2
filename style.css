@@ -1,0 +1,186 @@
+body {
+    /* adds background color  */
+    background-color: rgb(255, 192, 227); 
+}
+
+.mainPart {
+    color: #f4efef; /* changes color of font*/
+    background-image: url(./p2.jpg); /* adds image to background*/
+    background-repeat: no-repeat;/* there should be no repetition in background */
+    background-size: cover; /*covers the entire element*/
+    width: 100vw; /* sets the width to 100 viewport width*/
+    height: 85vh;/* sets the height to 85 viewport height*/
+}
+
+.header {
+    text-align: center; /* aligns the text in centre*/
+    color: rgb(240, 227, 227);
+    font-family: Arial, Helvetica, sans-serif; /* changes font */
+    font-style: italic; /* makes font italic*/
+    filter: drop-shadow(10px 10px 10px black); /* adds shadow to particular element of 10 pixel and black color*/
+    background-color: #1e1d1d; /* adds background color*/
+    height: 80px;
+    border-radius: 1rem; /* rounds the corner*/
+}
+
+.form1 {
+    border: solid black; /* adds border*/
+    background-color: rgb(33, 32, 32);
+    width: 30%;
+    margin-left: 32rem; /* adds margin to left*/
+    margin-top: 3rem; /* adds margin to right*/
+    border-radius: 0.6rem; /* rounds the corner*/
+    filter: drop-shadow(10px 10px 10px black); /* adds shadow to particular element of 10 pixel and black color*/
+}
+
+.form1contents {
+    margin: 1rem; /* adds margin to all sides*/
+
+}
+
+.formLabel {
+    border: solid rgb(246, 191, 217);
+    border-radius: 0.5rem;
+    margin-top: 0.5rem; /* rounds the corner*/
+    font-size: 1.2rem; /* sets size of font to 1.2 rem*/
+}
+
+label {
+    margin: 1rem;
+}
+
+.name,
+.email,
+.password {
+    margin-top: 0.5rem;
+    width: 70%;
+    border-radius: 1rem; /* rounds the corner*/
+    filter: drop-shadow(10px 10px 10px rgb(246, 191, 217));/* adds shadow to particular element of 10 pixel */
+}
+
+.btn {
+    border-radius: 0.5rem;
+    width: 40%;
+    height: 2rem; /* sets height of element*/
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-left: 30%;
+    filter: drop-shadow(10px 10px 10px rgb(246, 191, 217));
+}
+
+footer {
+    text-align: center; /* aligns the text in centre*/
+    color: rgb(240, 227, 227);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic; /* makes font italic*/
+    filter: drop-shadow(10px 10px 10px black);
+    background-color: #1e1d1d;
+    height: 80px;/* sets height of element*/
+    border-radius: 1rem; /* rounds the corner*/
+    font-size: 1.3rem;
+}
+/* Media query that affects screens with a maximum width of 700 pixels and formatting inside this block affects screen with width is 700px or less */
+@media screen and (max-width: 700px) {
+    .mainPart {
+        background-image: none;
+    }
+
+    .form1 {
+        margin-left: 16%;
+        width: 70%;
+
+    }
+
+    .header {
+        font-size: 50%;
+    }
+
+}
+/* Media query that affects screens with a minimum width of 700 pixels and formatting inside this block affects screen with width is 700px or more*/
+@media screen and (min-width: 700px) {
+    .products {
+        display: grid; /* grid is used*/
+        grid-template-columns: repeat(4, 1fr);/*grid layout with 4 equal columns anf 1 fraction space*/
+        /* margin-left: 5rem; */
+    }
+}
+
+.prod img {
+    width: 50%;
+    padding: 16px;
+    border: solid black;
+    background-color: black;
+
+}
+
+.prod {
+    font-weight: bolder; /* makes font bolder*/
+    font-family: cursive;
+    filter: drop-shadow(10px 10px 10px black); /* adds shadow to particular element of 10 pixel */
+    margin-left: 16%;
+}
+
+.Final p {
+    text-align: center;
+    font-style: italic;/* makes font italic*/
+    font-weight: bolder;/* makes font bolder*/
+    font-size: 1.2rem;
+}
+
+.Final h1 {
+    text-align: center;
+}
+
+.prod img:hover {
+    width: 80%;
+    background-color: #6d066c;
+}
+.loginPage{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold; /* makes font bold*/
+    font-family: cursive;
+}
+.loginForm{
+    margin-left: 30%;
+    background-color: #1e1d1d;
+    color: #f4efef;
+    width: 30%;
+    height: 30%; /* sets height of element*/
+    font-size: 1.5rem; /* sets font size*/
+    font-family: cursive; /* changes font to cursive*/
+    font-weight: bold; /* makes font bold*/
+    filter: drop-shadow(10px 10px 10px black); /* adds shadow to particular element of 10 pixel */
+}
+.btn2{
+    margin-top: 1rem;
+    margin-left: 30%;
+    width: 30%;
+    height: 20%;
+    border-radius: 1rem;
+    background-color: rgb(255, 192, 227);
+    filter: drop-shadow(10px 10px 10px rgb(216, 171, 171));
+}
+.member{
+    text-align: center; /* aligns text in center*/
+    color: black;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: bold; /* makes font bold*/
+}
+/* adds hover effects to button increases font size and change color */
+.btn:hover{
+    font-size: 1.8rem;
+    color: #6d066c; 
+}
+.Final a
+{
+    margin-left: 50%;
+    font-size: 1.2rem;
+    font-family: cursive;
+    font-weight: bolder;
+}
+/* adds hover effect to a increases font size */
+a:hover{
+    font-size: 1.8rem;
+}
